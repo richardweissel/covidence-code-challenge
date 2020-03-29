@@ -1,4 +1,5 @@
 require 'securerandom'
+require_relative 'review'
 require_relative '../logging'
 require_relative '../global_settings'
 
@@ -6,9 +7,9 @@ module Covidence
   class Citation
     include Logging
     include GlobalSettings
-    OUTCOME_INCLUDED = 1
-    OUTCOME_EXCLUDED = 2
-    OUTCOME_UNDECIDED = 3
+    OUTCOME_INCLUDED = 'included'.freeze
+    OUTCOME_EXCLUDED = 'excluded'.freeze
+    OUTCOME_UNDECIDED = 'undecided'.freeze
 
     attr_reader :citation_id, :title, :authors, :abstract, :published_year, :pages, :journal, :outcome, :reviews
 
@@ -31,9 +32,14 @@ module Covidence
 
     def add_review(review:)
       @reviews << review
-      @total_approvals += 1
-      @outcome = OUTCOME_INCLUDED if @total_approvals >= GlobalSettings.citation_included_threshold
+      if review.outcome == Covidence::Review::OUTCOME_YES
+        @total_approvals += 1
+        @outcome = OUTCOME_INCLUDED if @total_approvals >= GlobalSettings.citation_included_review_threshold
+      elsif @reviews.length > GlobalSettings.citation_minimum_reviews_for_outcome
+        @outcome = OUTCOME_EXCLUDED
+      end
       logger.info("Outcome is now #{@outcome}")
     end
+
   end
 end

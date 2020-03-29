@@ -1,1 +1,2 @@
-citation_included_threshold: 2
+citation_included_review_threshold: 2
+citation_minimum_reviews_for_outcome: 2

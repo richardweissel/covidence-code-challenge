@@ -2,14 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2067d2bf-f10c-41f3-ad51-c4398d86fa24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spec/controllers/citations_controller_spec.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spec/data_access/json_input_parser_spec.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/controllers/invalid_params_error.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/covidence-code-challenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covidence-code-challenge.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/covidence/citation_not_found_error.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/covidence/citation_not_found_error.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/covidence/reviewer_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/covidence/reviewer_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/covidence/citation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/covidence/citation.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/covidence/manager.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/covidence/manager.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/global_settings.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/global_settings.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +37,20 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/covidence" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/controllers" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/covidence" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/spec/covidence" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.JsonInputParser">
+  <component name="RunManager" selected="Rack.Run Server">
     <configuration name="CitationsController GET to ..." type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="covidence-code-challenge" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -210,6 +216,35 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="Run Server" type="RackRunConfigurationType" factoryName="Rack">
+      <module name="covidence-code-challenge" />
+      <RACK_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-I." />
+      <RACK_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RACK_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RACK_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RACK_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RACK_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RACK_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RACK_CONFIG_SETTINGS_ID NAME="CONFIG_FILE" VALUE="config.ru" />
+      <RACK_CONFIG_SETTINGS_ID NAME="RACK_SERVER_TYPE" VALUE="default" />
+      <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Rack.Run Server" />
+      <item itemvalue="RSpec.CitationsController" />
+      <item itemvalue="RSpec.CitationsController GET" />
+      <item itemvalue="RSpec.CitationsController GET to ..." />
+      <item itemvalue="RSpec.JsonInputParser" />
+      <item itemvalue="RSpec.JsonInputParser read_citati..." />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="RSpec.JsonInputParser" />
@@ -231,7 +266,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585477385166</updated>
-      <workItem from="1585477386479" duration="3944000" />
+      <workItem from="1585477386479" duration="7060000" />
     </task>
     <servers />
   </component>
@@ -239,26 +274,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="176" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585507381867">
+      <screen x="-248" y="-1057" width="1920" height="1057" />
+    </state>
+    <state x="176" y="-867" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585507381867" />
     <state x="433" y="-719" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585481337502">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
     <state x="433" y="-719" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585481337502" />
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom" timestamp="1585481321111">
+    <state width="1878" height="258" key="GridCell.Tab.0.bottom" timestamp="1585508176949">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.bottom/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585481321111" />
-    <state width="1878" height="290" key="GridCell.Tab.0.center" timestamp="1585481321110">
+    <state width="1878" height="258" key="GridCell.Tab.0.bottom/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585508176949" />
+    <state width="1878" height="258" key="GridCell.Tab.0.center" timestamp="1585508176949">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.center/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585481321110" />
-    <state width="1878" height="290" key="GridCell.Tab.0.left" timestamp="1585481321110">
+    <state width="1878" height="258" key="GridCell.Tab.0.center/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585508176949" />
+    <state width="1878" height="258" key="GridCell.Tab.0.left" timestamp="1585508176947">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.left/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585481321110" />
-    <state width="1878" height="290" key="GridCell.Tab.0.right" timestamp="1585481321110">
+    <state width="1878" height="258" key="GridCell.Tab.0.left/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585508176947" />
+    <state width="1878" height="258" key="GridCell.Tab.0.right" timestamp="1585508176949">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="290" key="GridCell.Tab.0.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585481321110" />
+    <state width="1878" height="258" key="GridCell.Tab.0.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585508176949" />
     <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1585480718219">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
@@ -291,24 +330,25 @@
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1878" height="357" key="GridCell.Tab.2.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585480718220" />
-    <state x="221" y="-890" key="SettingsEditor" timestamp="1585479785004">
+    <state x="221" y="-890" key="SettingsEditor" timestamp="1585507385922">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="221" y="-890" key="SettingsEditor/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585479785004" />
-    <state x="392" y="-772" width="639" height="486" key="find.popup" timestamp="1585480707511">
+    <state x="221" y="-890" key="SettingsEditor/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585507385922" />
+    <state x="392" y="-772" width="639" height="486" key="find.popup" timestamp="1585506318022">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="392" y="-772" width="639" height="486" key="find.popup/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585480707511" />
-    <state x="377" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1585477971776">
+    <state x="392" y="-772" width="639" height="486" key="find.popup/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585506318022" />
+    <state x="377" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1585506690443">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="377" y="-822" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585477971776" />
+    <state x="377" y="-822" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585506690443" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Manager_create_r___.rcov" NAME="Covidence::Manager create_r... Coverage Results" MODIFIED="1585478426858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@All_tests_in_spec__covidence_code_challenge.rcov" NAME="All tests in spec: covidence-code-challenge Coverage Results" MODIFIED="1585479692899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
+    <SUITE FILE_PATH="coverage/covidence_code_challenge@Run_Server.rcov" NAME="Run Server Coverage Results" MODIFIED="1585507388160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@reviewer_spec.rcov" NAME="reviewer_spec Coverage Results" MODIFIED="1585479809416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
-    <SUITE FILE_PATH="coverage/covidence_code_challenge@JsonInputParser.rcov" NAME="JsonInputParser Coverage Results" MODIFIED="1585481321100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
+    <SUITE FILE_PATH="coverage/covidence_code_challenge@JsonInputParser.rcov" NAME="JsonInputParser Coverage Results" MODIFIED="1585507310274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@All_tests_in_app__covidence_code_challenge.rcov" NAME="All tests in app: covidence-code-challenge Coverage Results" MODIFIED="1585479536969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@CitationsController_GET_to____.rcov" NAME="CitationsController GET to ... Coverage Results" MODIFIED="1585480758591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@citation_spec.rcov" NAME="citation_spec Coverage Results" MODIFIED="1585479597332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />

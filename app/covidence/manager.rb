@@ -17,12 +17,15 @@ module Covidence
       @data_accessor ||= DataAccessor.instance
     end
 
-    def create_review(params_hash:)
-      reviewer = data_accessor.find_or_create_reviewer(params_hash[:reviewer_id])
-      citation = data_accessor.find_citation(params_hash[:citation_id])
-      raise Covidence::CitationNotFoundError, "Citation id #{params_hash[:citation_id]} not found" unless citation
+    def create_review(reviewer_id:, citation_id:, outcome:)
+      reviewer = data_accessor.find_or_create_reviewer(reviewer_id)
+      citation = data_accessor.find_citation(citation_id)
+      raise Covidence::CitationNotFoundError, "Citation id #{citation_id} not found" unless citation
 
-      review = Covidence::Review.new(reviewer: reviewer, citation: citation)
+      review = Covidence::Review.new(reviewer: reviewer,
+                                     citation: citation,
+                                     outcome_is_approved: outcome.casecmp('yes').zero?)
+
       data_accessor.save_review(review)
       review
     end
