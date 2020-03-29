@@ -7,7 +7,7 @@
 * Full Problem Statement: See [https://gist.github.com/ajoneil/5790a23a906e16ea08c3b0e93f380f48]
 * This is a dockerised (base image Ruby 2.6.5) Ruby API (using Sinatra as a lightweight api framework), providing endpoints to:
   * list all citations (listing its id, year, title, outcome and total reviews)
-    * GET http://localhost:30000/api/v1/citations
+    * GET http://localhost:3000/api/v1/citations
   * submit a review for a citation
     * POST http://localhost:3000/api/v1/reviews
   
