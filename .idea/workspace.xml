@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2067d2bf-f10c-41f3-ad51-c4398d86fa24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/covidence-code-challenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covidence-code-challenge.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/controllers/citations_controller_spec.rb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/data_access/json_input_parser_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/data_access/json_input_parser_spec.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/data_access/data_accessor.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/data_access/data_accessor.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
       <recent name="$PROJECT_DIR$/spec/covidence" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Covidence::Manager">
+  <component name="RunManager" selected="Test::Unit/Shoulda/Minitest.All tests in spec: covidence-code-challenge">
     <configuration name="Covidence::Citation" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="covidence-code-challenge" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -239,10 +237,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in spec: covidence-code-challenge" />
         <item itemvalue="RSpec.Covidence::Manager" />
         <item itemvalue="RSpec.Covidence::Manager create_r..." />
         <item itemvalue="RSpec.JsonInputParser" />
-        <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in spec: covidence-code-challenge" />
         <item itemvalue="RSpec.Covidence::Citation" />
       </list>
     </recent_temporary>
@@ -258,7 +256,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585477385166</updated>
-      <workItem from="1585477386479" duration="9082000" />
+      <workItem from="1585477386479" duration="10350000" />
     </task>
     <servers />
   </component>
@@ -278,22 +276,22 @@
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
     <state x="475" y="-818" key="#xdebugger.evaluate/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585509932955" />
-    <state width="1878" height="258" key="GridCell.Tab.0.bottom" timestamp="1585510754859">
+    <state width="1878" height="258" key="GridCell.Tab.0.bottom" timestamp="1585511968361">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.bottom/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754859" />
-    <state width="1878" height="258" key="GridCell.Tab.0.center" timestamp="1585510754858">
+    <state width="1878" height="258" key="GridCell.Tab.0.bottom/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585511968361" />
+    <state width="1878" height="258" key="GridCell.Tab.0.center" timestamp="1585511968360">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.center/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754858" />
-    <state width="1878" height="258" key="GridCell.Tab.0.left" timestamp="1585510754857">
+    <state width="1878" height="258" key="GridCell.Tab.0.center/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585511968360" />
+    <state width="1878" height="258" key="GridCell.Tab.0.left" timestamp="1585511968359">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.left/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754857" />
-    <state width="1878" height="258" key="GridCell.Tab.0.right" timestamp="1585510754858">
+    <state width="1878" height="258" key="GridCell.Tab.0.left/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585511968359" />
+    <state width="1878" height="258" key="GridCell.Tab.0.right" timestamp="1585511968360">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754858" />
+    <state width="1878" height="258" key="GridCell.Tab.0.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585511968360" />
     <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1585510022334">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
@@ -330,10 +328,10 @@
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
     <state x="221" y="-890" key="SettingsEditor/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510308650" />
-    <state x="392" y="-772" width="639" height="486" key="find.popup" timestamp="1585509485830">
+    <state x="392" y="-772" width="639" height="486" key="find.popup" timestamp="1585511959619">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="392" y="-772" width="639" height="486" key="find.popup/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585509485830" />
+    <state x="392" y="-772" width="639" height="486" key="find.popup/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585511959619" />
     <state x="377" y="-822" width="670" height="676" key="search.everywhere.popup" timestamp="1585506690443">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
@@ -363,8 +361,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Run_Server.rcov" NAME="Run Server Coverage Results" MODIFIED="1585507388160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
-    <SUITE FILE_PATH="coverage/covidence_code_challenge@All_tests_in_spec__covidence_code_challenge.rcov" NAME="All tests in spec: covidence-code-challenge Coverage Results" MODIFIED="1585510554846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Manager_create_r___.rcov" NAME="Covidence::Manager create_r... Coverage Results" MODIFIED="1585510752568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
+    <SUITE FILE_PATH="coverage/covidence_code_challenge@All_tests_in_spec__covidence_code_challenge.rcov" NAME="All tests in spec: covidence-code-challenge Coverage Results" MODIFIED="1585511968346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@reviewer_spec.rcov" NAME="reviewer_spec Coverage Results" MODIFIED="1585479809416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Citation_add_review.rcov" NAME="Covidence::Citation add_review Coverage Results" MODIFIED="1585510035663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@JsonInputParser.rcov" NAME="JsonInputParser Coverage Results" MODIFIED="1585510679689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />

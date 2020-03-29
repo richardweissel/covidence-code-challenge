@@ -22,12 +22,6 @@ class DataAccessor
     @reviewers ||= {}
   end
 
-  def add_citation_from_hash(citation_hash:, citation_id:)
-    citation_hash[:citation_id] = citation_id
-    citation = Covidence::Citation.new(key_value_hash: citation_hash)
-    citations[citation.citation_id] = citation
-  end
-
   def find_citation(citation_id)
     citations[citation_id]
   end
@@ -48,9 +42,17 @@ class DataAccessor
   def initialize_database(filename:)
     citations = JsonInputParser.new.read_citations_from_input_file(filename: filename)
     citations.each_with_index do |citation, idx|
-      add_citation_from_hash(citation_hash: citation, citation_id: idx.to_s)
+      add_citation(citation_hash: citation, citation_id: idx.to_s)
     end
     logger.info("Total citations in database: #{citations.length}")
+  end
+
+  private
+
+  def add_citation(citation_hash:, citation_id:)
+    citation_hash[:citation_id] = citation_id
+    citation = Covidence::Citation.new(key_value_hash: citation_hash)
+    citations[citation.citation_id] = citation
   end
 
 end
