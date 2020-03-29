@@ -47,7 +47,6 @@ class DataAccessor
 
   def initialize_database(filename:)
     citations = JsonInputParser.new.read_citations_from_input_file(filename: filename)
-    logger.info("Citations: #{citations.length}")
     citations.each_with_index do |citation, idx|
       add_citation_from_hash(citation_hash: citation, citation_id: idx.to_s)
     end
