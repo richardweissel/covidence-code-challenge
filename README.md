@@ -14,7 +14,8 @@
 ## Prerequisites
 
 * Ruby 2.6.x
-* Docker
+* Docker (https://docs.docker.com/)
+* Docker Compose (https://docs.docker.com/compose/)
   
 ## How to Run
 
@@ -50,7 +51,8 @@ You can submit a review using a POST request, for example, to submit a review fo
   This is intended to separate concerns ('front facing api' vs 'back end logic') --> the theory being we could swap out the API framework if desired 
   
 * There is no back end database - it is currently held in memory, by loading the 241 citation sample file 'sample_241_citations.json'
-* 
+* The intention is that the database layer could be swapped out by a 'real one' if desired, as the DataAccessor is injected into the Manager.
+  This means that for example a 'PostgresDataAccessor' (which implements the same methods) could be injected into the manager with no other changes.
   
 #### Configuration
 * The minimum no. of 'yes' reviews required for a citation to be Included is configured in 'config.yaml'
