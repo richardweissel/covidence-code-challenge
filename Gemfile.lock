@@ -46,6 +46,7 @@ PLATFORMS
 
 DEPENDENCIES
   rspec
+  rspec-mocks
   simplecov
   simplecov-console
   sinatra
