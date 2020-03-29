@@ -23,7 +23,7 @@
 * ```docker-compose up```
 * The server will now be running on port 3000
 
-You can list all citations via http://localhost/api/v1/citations
+You can list all citations via http://localhost:3000/api/v1/citations.
 You can submit a review using a POST request, for example, to submit a review for:
 * Reviewer id 3
 * Citation id 1
