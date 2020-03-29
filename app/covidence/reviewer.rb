@@ -5,6 +5,7 @@ module Covidence
     attr_reader :id, :name, :reviews
 
     def initialize(id = 0)
+      @id = id
       @reviews = []
     end
 

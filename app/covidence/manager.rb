@@ -37,7 +37,9 @@ module Covidence
     def brief_citations
       citations = []
       data_accessor.citations.each do |citation_id, citation|
-        citations << { citation_id: citation_id, title: citation.title, published_year: citation.published_year }
+        citations << { citation_id: citation_id, title: citation.title,
+                       published_year: citation.published_year, outcome: citation.outcome,
+                       total_reviews: citation.reviews.length }
       end
       citations
     end

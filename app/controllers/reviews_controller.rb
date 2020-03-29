@@ -18,6 +18,9 @@ class ReviewsController < BaseController
     rescue Covidence::CitationNotFoundError => e
       status 404
       JSON.generate(e)
+    rescue Covidence::ReviewExistsError => e
+      status 400
+      JSON.generate(e)
     rescue Exception => e
       logger.error("Error:#{e.backtrace}")
       status 500

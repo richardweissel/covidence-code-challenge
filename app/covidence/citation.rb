@@ -1,5 +1,6 @@
 require 'securerandom'
 require_relative 'review'
+require_relative 'review_exists_error'
 require_relative '../logging'
 require_relative '../global_settings'
 
@@ -31,6 +32,9 @@ module Covidence
     end
 
     def add_review(review:)
+      # If this reviewer has already submitted a review for this citation, return an error
+      raise ReviewExistsError if been_reviewed_by?(review.reviewer)
+
       @reviews << review
       if review.outcome == Covidence::Review::OUTCOME_YES
         @total_approvals += 1
@@ -39,6 +43,15 @@ module Covidence
         @outcome = OUTCOME_EXCLUDED
       end
       logger.info("Outcome is now #{@outcome}")
+    end
+
+    private
+
+    def been_reviewed_by?(reviewer)
+      @reviews.each do |review|
+        return true if review.reviewer.id == reviewer.id
+      end
+      false
     end
 
   end
