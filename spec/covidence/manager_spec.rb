@@ -9,7 +9,7 @@ describe Covidence::Manager do
       allow(data_accessor).to receive(:find_citation).and_return('citation')
       allow(data_accessor).to receive(:save_review)
       manager = Covidence::Manager.new(data_accessor)
-      manager.create_review(params_hash: {})
+      manager.create_review(reviewer_id: 1, citation_id: 2, outcome: 'no')
     end
 
     it 'raises an error when the citation is not found' do
@@ -17,7 +17,7 @@ describe Covidence::Manager do
       allow(data_accessor).to receive(:find_or_create_reviewer).and_return('reviewer')
       allow(data_accessor).to receive(:find_citation).and_return(nil)
       manager = Covidence::Manager.new(data_accessor)
-      expect {manager.create_review(params_hash: {citation_id: 123})}.to raise_error.with_message('Citation id 123 not found')
+      expect {manager.create_review(reviewer_id: 1, citation_id: 123, outcome: "no")}.to raise_error.with_message('Citation id 123 not found')
     end
   end
 end

@@ -9,6 +9,8 @@
   * submit a review for a citation
   ```POST http://localhost:3000/api/v1/reviews ```
   
+## Prerequisites
+  
 ## How to Run
 
 ##How to Test

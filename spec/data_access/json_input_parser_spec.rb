@@ -1,3 +1,4 @@
+require_relative '../spec_helper'
 require_relative '../../app/data_access/json_input_parser'
 
 describe JsonInputParser do

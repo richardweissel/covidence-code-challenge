@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2067d2bf-f10c-41f3-ad51-c4398d86fa24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/covidence/review_exists_error.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/covidence-code-challenge.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covidence-code-challenge.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/reviews_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/covidence/citation.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/covidence/citation.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/covidence/manager.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/covidence/manager.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/covidence/reviewer.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/covidence/reviewer.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/covidence/citation_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/covidence/citation_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/controllers/citations_controller_spec.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/data_access/json_input_parser_spec.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/data_access/json_input_parser_spec.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/spec_helper.rb" beforeDir="false" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/covidence" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyActiveModuleSdkConfigurable" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.ruby.settings.RubyModuleStructureConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -47,73 +46,7 @@
       <recent name="$PROJECT_DIR$/spec/covidence" />
     </key>
   </component>
-  <component name="RunManager" selected="RSpec.Covidence::Citation">
-    <configuration name="Covidence::Citation add_rev..." type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="covidence-code-challenge" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/covidence/citation_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Covidence::Citation add_review raises error if review already exists" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Covidence::Citation add_review" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
-      <module name="covidence-code-challenge" />
-      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="JRUBY_OPTS" value="-X+O" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/covidence/citation_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Covidence::Citation add_review" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="RSpec.Covidence::Manager">
     <configuration name="Covidence::Citation" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="covidence-code-challenge" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
@@ -147,7 +80,7 @@
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
       <method v="2" />
     </configuration>
-    <configuration name="JsonInputParser read_citati..." type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+    <configuration name="Covidence::Manager create_r..." type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
       <module name="covidence-code-challenge" />
       <predefined_log_file enabled="true" id="RUBY_RSPEC" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
@@ -166,10 +99,43 @@
         </COVERAGE_PATTERN>
       </EXTENSION>
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/data_access/json_input_parser_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/covidence/manager_spec.rb" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="JsonInputParser read_citations_from_input_file should return the correct no. of citations for a valid file" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Covidence::Manager create_review raises an error when the citation is not found" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Covidence::Manager" type="RSpecRunConfigurationType" factoryName="RSpec" temporary="true" nameIsGenerated="true">
+      <module name="covidence-code-challenge" />
+      <predefined_log_file enabled="true" id="RUBY_RSPEC" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="$MODULE_DIR$/spec/covidence/manager_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="Covidence::Manager" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
       <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
@@ -234,21 +200,50 @@
       <RACK_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method v="2" />
     </configuration>
+    <configuration name="All tests in spec: covidence-code-challenge" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest" temporary="true">
+      <module name="covidence-code-challenge" />
+      <predefined_log_file enabled="true" id="RUBY_TESTUNIT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="JRUBY_OPTS" value="-X+O" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="true" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="$MODULE_DIR$/spec" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/{*_test,test_*,*_spec}.rb" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="ALL_IN_FOLDER" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Rack.Run Server" />
       <item itemvalue="RSpec.JsonInputParser" />
-      <item itemvalue="RSpec.JsonInputParser read_citati..." />
       <item itemvalue="RSpec.Covidence::Citation" />
-      <item itemvalue="RSpec.Covidence::Citation add_rev..." />
-      <item itemvalue="RSpec.Covidence::Citation add_review" />
+      <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in spec: covidence-code-challenge" />
+      <item itemvalue="RSpec.Covidence::Manager create_r..." />
+      <item itemvalue="RSpec.Covidence::Manager" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="RSpec.Covidence::Citation" />
-        <item itemvalue="RSpec.Covidence::Citation add_review" />
-        <item itemvalue="RSpec.Covidence::Citation add_rev..." />
+        <item itemvalue="RSpec.Covidence::Manager" />
+        <item itemvalue="RSpec.Covidence::Manager create_r..." />
         <item itemvalue="RSpec.JsonInputParser" />
-        <item itemvalue="RSpec.JsonInputParser read_citati..." />
+        <item itemvalue="Test::Unit/Shoulda/Minitest.All tests in spec: covidence-code-challenge" />
+        <item itemvalue="RSpec.Covidence::Citation" />
       </list>
     </recent_temporary>
   </component>
@@ -263,7 +258,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585477385166</updated>
-      <workItem from="1585477386479" duration="8444000" />
+      <workItem from="1585477386479" duration="9082000" />
     </task>
     <servers />
   </component>
@@ -283,22 +278,22 @@
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
     <state x="475" y="-818" key="#xdebugger.evaluate/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585509932955" />
-    <state width="1878" height="258" key="GridCell.Tab.0.bottom" timestamp="1585510040915">
+    <state width="1878" height="258" key="GridCell.Tab.0.bottom" timestamp="1585510754859">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.bottom/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510040915" />
-    <state width="1878" height="258" key="GridCell.Tab.0.center" timestamp="1585510040914">
+    <state width="1878" height="258" key="GridCell.Tab.0.bottom/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754859" />
+    <state width="1878" height="258" key="GridCell.Tab.0.center" timestamp="1585510754858">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.center/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510040914" />
-    <state width="1878" height="258" key="GridCell.Tab.0.left" timestamp="1585510040914">
+    <state width="1878" height="258" key="GridCell.Tab.0.center/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754858" />
+    <state width="1878" height="258" key="GridCell.Tab.0.left" timestamp="1585510754857">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.left/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510040914" />
-    <state width="1878" height="258" key="GridCell.Tab.0.right" timestamp="1585510040915">
+    <state width="1878" height="258" key="GridCell.Tab.0.left/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754857" />
+    <state width="1878" height="258" key="GridCell.Tab.0.right" timestamp="1585510754858">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1878" height="258" key="GridCell.Tab.0.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510040915" />
+    <state width="1878" height="258" key="GridCell.Tab.0.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510754858" />
     <state width="1878" height="357" key="GridCell.Tab.1.bottom" timestamp="1585510022334">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
@@ -331,10 +326,10 @@
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
     <state width="1878" height="357" key="GridCell.Tab.2.right/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510022335" />
-    <state x="221" y="-890" key="SettingsEditor" timestamp="1585507385922">
+    <state x="221" y="-890" key="SettingsEditor" timestamp="1585510308650">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
-    <state x="221" y="-890" key="SettingsEditor/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585507385922" />
+    <state x="221" y="-890" key="SettingsEditor/0.23.1440.877/-248.-1057.1920.1057@-248.-1057.1920.1057" timestamp="1585510308650" />
     <state x="392" y="-772" width="639" height="486" key="find.popup" timestamp="1585509485830">
       <screen x="-248" y="-1057" width="1920" height="1057" />
     </state>
@@ -367,18 +362,18 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Manager_create_r___.rcov" NAME="Covidence::Manager create_r... Coverage Results" MODIFIED="1585478426858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
-    <SUITE FILE_PATH="coverage/covidence_code_challenge@All_tests_in_spec__covidence_code_challenge.rcov" NAME="All tests in spec: covidence-code-challenge Coverage Results" MODIFIED="1585479692899" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Run_Server.rcov" NAME="Run Server Coverage Results" MODIFIED="1585507388160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
+    <SUITE FILE_PATH="coverage/covidence_code_challenge@All_tests_in_spec__covidence_code_challenge.rcov" NAME="All tests in spec: covidence-code-challenge Coverage Results" MODIFIED="1585510554846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
+    <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Manager_create_r___.rcov" NAME="Covidence::Manager create_r... Coverage Results" MODIFIED="1585510752568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@reviewer_spec.rcov" NAME="reviewer_spec Coverage Results" MODIFIED="1585479809416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Citation_add_review.rcov" NAME="Covidence::Citation add_review Coverage Results" MODIFIED="1585510035663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
-    <SUITE FILE_PATH="coverage/covidence_code_challenge@JsonInputParser.rcov" NAME="JsonInputParser Coverage Results" MODIFIED="1585507310274" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
+    <SUITE FILE_PATH="coverage/covidence_code_challenge@JsonInputParser.rcov" NAME="JsonInputParser Coverage Results" MODIFIED="1585510679689" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@All_tests_in_app__covidence_code_challenge.rcov" NAME="All tests in app: covidence-code-challenge Coverage Results" MODIFIED="1585479536969" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@CitationsController_GET_to____.rcov" NAME="CitationsController GET to ... Coverage Results" MODIFIED="1585480758591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@citation_spec.rcov" NAME="citation_spec Coverage Results" MODIFIED="1585479597332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Citation____retu___.rcov" NAME="Covidence::Citation.== retu... Coverage Results" MODIFIED="1585479590963" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Citation.rcov" NAME="Covidence::Citation Coverage Results" MODIFIED="1585510040903" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
-    <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Manager.rcov" NAME="Covidence::Manager Coverage Results" MODIFIED="1585479081895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
+    <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Manager.rcov" NAME="Covidence::Manager Coverage Results" MODIFIED="1585510754847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Citation_add_rev___.rcov" NAME="Covidence::Citation add_rev... Coverage Results" MODIFIED="1585509951124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@Covidence__Manager_create_r_____1_.rcov" NAME="Covidence::Manager create_r... (1) Coverage Results" MODIFIED="1585479041282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
     <SUITE FILE_PATH="coverage/covidence_code_challenge@CitationsController_GET.rcov" NAME="CitationsController GET Coverage Results" MODIFIED="1585480997444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="covidence-code-challenge" />
