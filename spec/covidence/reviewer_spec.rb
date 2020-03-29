@@ -1,3 +1,4 @@
+require 'rspec'
 require_relative '../../app/covidence/reviewer'
 
 describe Covidence::Reviewer do

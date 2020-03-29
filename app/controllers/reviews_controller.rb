@@ -4,7 +4,7 @@ require 'json'
 
 class ReviewsController < BaseController
 
-  post '/reviews' do
+  post '/api/v1/reviews' do
     logger.info("creating review with params #{params.length}")
     begin
       review = review_manager.create_review(params_hash: params)
@@ -18,10 +18,6 @@ class ReviewsController < BaseController
       status 500
       JSON.generate(e)
     end
-  end
-
-  get '/reviews/:id' do
-    "Review #{params[:id]} Show"
   end
 
 end
